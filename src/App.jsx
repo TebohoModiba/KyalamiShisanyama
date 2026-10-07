@@ -1,5 +1,6 @@
 // src/App.jsx
 import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MenuGrid from './components/MenuGrid';
 import WeeklyEvents from './components/WeeklyEvents';
@@ -8,8 +9,9 @@ import ContactInfo from './components/ContactInfo';
 
 function App() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-50 font-sans selection:bg-amber-500 selection:text-neutral-950">
-      {/* Navigation (Optional sticky header wrapper can go here later) */}
+    <div className="min-h-screen bg-neutral-950 text-neutral-50 font-sans selection:bg-amber-500 selection:text-neutral-950 pt-16">
+      {/* Sticky Header Navigation */}
+      <Navbar />
       
       <main>
         {/* Impact Entry */}
